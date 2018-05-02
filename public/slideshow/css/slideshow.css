@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #222 url("images/bg.png") repeat;
+}
+
+body {
+ 
+  }
+
+#wrapper {
+  
+  color: #888;
+  font: 14px/20px Helvetica, Arial, sans-serif;
+  margin: 0px auto 0;
+  max-width: 1600px;
+  
+  text-align: center;
+  text-shadow: 0 -2px 1px #000;
+  -webkit-font-smoothing: antialiased;
+  }
+
+p {
+  text-align: center;
+  /* max-width: 540px; */
+  margin: 0 auto 20px;
+  }
+
+
+
+/* Callback example */
+
+.callbacks_container {
+  margin-bottom: 0px;
+  position: relative;
+  float: left;
+  width: 100%;
+  
+  }
+
+.callbacks img {
+  display: block;
+  position: relative;
+  
+  z-index: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  border: 0;
+  }
+
+.callbacks .caption {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  text-shadow: none;
+  color: #fff;
+  background: #000;
+  background: rgba(38, 34, 40, 0.288);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  margin: 0;
+  max-width: none;
+  }
+
+.callbacks_nav {
+  position: absolute;
+ 
+  top: 52%;
+  left: 0;
+  opacity: 0.7;
+  z-index: 3;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../images/themes.gif") no-repeat left top;
+  margin-top: -45px;
+  }
+
+.callbacks_nav:active {
+  opacity: 1.0;
+  }
+
+.callbacks_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+  }
+
+
+@media screen and (max-width: 600px) {
+  p {
+    font: 24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    }
+
+
+    .callbacks .caption {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      font-size: 10px;
+      text-shadow: none;
+      color: #fff;
+      background: #000;
+      background: rgba(0,0,0, .8);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 10px 20px;
+      margin: 0;
+      max-width: none;
+      }
+  }
+
+  @media screen and (max-width: 300px) {
+    .callbacks_container {
+      display: none;
+      
+      }
+    }
+
+ 

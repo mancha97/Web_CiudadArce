@@ -1,0 +1,198 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:600);
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+header{
+  position:fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #1594BD;
+  opacity: .5;
+  padding-top: 8px;
+  text-align: center;
+  z-index: 20;
+}
+
+@media only screen and (max-width: 574px){
+    header{
+        font-size: 265%;
+    }
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.NavIcon{ /*Nav bar icons*/
+  position: absolute;
+  margin
+}
+
+.NavText{/*NavBar text. Padding with icons*/
+  position: relative;
+  padding-left: 23px;
+  padding-top: 2px;
+}
+
+@media only screen and (max-width: 574px){
+    .content{
+        margin-top: 170px;
+    }
+}
+
+
+h2{
+    margin-top: 8px;
+    display:block;
+}
+
+.btn {
+    width: 100%;
+    color: #212529;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    border-radius: 0px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ddd;
+}
+
+@media only screen and (max-width: 574px){
+    .btn{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.btn:hover{
+    background-color: #bcbcbc;
+    color: black;
+}
+
+
+
+.tabmenu{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    float: left;
+    background-color: white;
+    border-right: 2px solid #e0e0e0 ;
+    margin-left: -15px;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+/* EFFECTOS */
+
+#homebtn{
+    border-top:2px solid RGBA(79,195,247,1);
+}
+
+.btn-effect {
+    width: 100%;
+    display: block;
+    padding-top: 4px;
+    position: relative;
+    background-color: #eeeeee;
+    border-bottom:2px solid RGBA(79,195,247,0.7);
+}
+
+.btn-effect:hover {
+  color: #000;
+}
+
+.btn-effect::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color:#29b6f6 ;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.btn-effect:hover::before {
+    margin-left: 0px;
+    width: 100%;
+}
+
+.bss-slides{
+  background: #000;
+  position: relative;
+  display: block;
+}
+
+
+/*This is for slideshow*/
+
+.slides{
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides img{
+  width: 100%;
+}
+
+#slider{
+  height: 80vh;
+}
+
+#prev{
+  left: 0;
+    padding: 10px 10px 15px 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#next{
+  right: 0;
+    padding: 10px 5px 15px 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#prev, #next{
+  color: #FFF;
+    position: absolute;
+    background: #000;
+    background: rgba(0,0,0,.6);
+    top: 50%;
+    z-index: 4;
+    font-size: 2em;
+    margin-top: -1.2em;
+    opacity: .5;
+    /*-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;*/
+}
+
+
+/* Codigo para paginas de informacion*/
+
